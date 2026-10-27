@@ -73,7 +73,7 @@ public class CaptureService extends Service {
         handler = new Handler(thread.getLooper());
         startForeground(1, buildNotification());
         showOverlay();
-        engine.start(getApplicationInfo().nativeLibraryDir, s -> {});
+        engine.start(new java.io.File(getApplicationInfo().nativeLibraryDir), s -> {});
     }
 
     @Override
