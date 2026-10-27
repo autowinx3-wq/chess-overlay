@@ -27,6 +27,10 @@ android {
 }
 
 dependencies {
+    constraints {
+        implementation('org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22') { because 'kotlin-stdlib fix' }
+        implementation('org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22') { because 'kotlin-stdlib fix' }
+    }
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.core:core:1.12.0'
 }
