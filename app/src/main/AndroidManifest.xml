@@ -10,7 +10,7 @@
         android:allowBackup="true"
         android:label="Chess Overlay"
         android:icon="@android:drawable/ic_menu_compass"
-        android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+        android:theme="@style/AppTheme">
 
         <activity
             android:name=".MainActivity"
@@ -26,8 +26,5 @@
             android:exported="false"
             android:foregroundServiceType="mediaProjection" />
 
-        <service
-            android:name=".OverlayService"
-            android:exported="false" />
     </application>
 </manifest>
